@@ -66,7 +66,7 @@ const SubmoduleCard = ({
           <p className="text-sm text-end">
             {moduleProgress.totalA} / {moduleProgress.totalQ}
           </p>
-          <Progress value={(moduleProgress.totalA / moduleProgress.totalQ) * 100}/>
+          <Progress color="lime" value={(moduleProgress.totalA / moduleProgress.totalQ) * 100}/>
         </div>
       </div>
     </motion.div>
