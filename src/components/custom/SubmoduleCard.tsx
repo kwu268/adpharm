@@ -43,7 +43,7 @@ const SubmoduleCard = ({
     getModuleProgress();
   }, []);
   return (
-    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="shadow-lg rounded-3xl">
+    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="shadow-lg rounded-3xl cursor-pointer">
       <SubmoduleModal
         opened={opened}
         onClose={close}
@@ -54,8 +54,8 @@ const SubmoduleCard = ({
         onClick={open}
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
-        className={`border-2 rounded-xl h-36 flex flex-col justify-center ${
-          isHover ? "bg-[#4e2f63]" : "bg-[#b2acec]"
+        className={`text-[#740BE1] font-semibold border-2 rounded-xl h-36 flex flex-col justify-center ${
+          isHover ? "bg-[#FFFAC7]" : "bg-[#FFDB5C]"
         }`}
       >
         <h3 className="font-semibold text-md text-center">
@@ -66,7 +66,7 @@ const SubmoduleCard = ({
           <p className="text-sm text-end">
             {moduleProgress.totalA} / {moduleProgress.totalQ}
           </p>
-          <Progress color="lime" value={(moduleProgress.totalA / moduleProgress.totalQ) * 100}/>
+          <Progress aria-label="User progress bar" color="#740BE1" value={(moduleProgress.totalA / moduleProgress.totalQ) * 100}/>
         </div>
       </div>
     </motion.div>

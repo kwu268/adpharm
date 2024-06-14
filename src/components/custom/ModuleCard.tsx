@@ -45,7 +45,7 @@ const ModuleCard = ({ moduleTitle, submodule }: ModuleCardProps) => {
 
   if (isMobileScreen) {
     return (
-      <motion.div whileHover={{ scale: 1.02 }} className="h-full shadow-lg rounded-2xl">
+      <motion.div whileHover={{ scale: 1.02 }} className="h-full shadow-lg rounded-2xl cursor-pointer">
         <SubmoduleModalMobile
           opened={opened}
           onClose={close}
@@ -54,16 +54,16 @@ const ModuleCard = ({ moduleTitle, submodule }: ModuleCardProps) => {
         />
         <Card
           h="100%"
-          style={{ backgroundColor: "#a487e6" }}
+          style={{ backgroundColor: "#FFDB5C" }}
           shadow="sm"
           padding="lg"
           radius="lg"
           withBorder
           onClick={open}
         >
-          <div className="flex flex-col items-center h-full">
+          <div className="flex flex-col items-center h-full text-[#740BE1]">
             <div className="text-center h-1/3 ">
-              <h1 className="text-lg font-bold">{moduleTitle.split(":")[0]}</h1>
+              <h1 className="text-lg font-bold ">{moduleTitle.split(":")[0]}</h1>
               <p className="font-semibold">{moduleTitle.split(":")[1]}</p>
             </div>
             <RingProgress
@@ -71,12 +71,12 @@ const ModuleCard = ({ moduleTitle, submodule }: ModuleCardProps) => {
               sections={[
                 {
                   value: (moduleProgress.totalA / moduleProgress.totalQ) * 100,
-                  color: "lime",
+                  color: "#740BE1",
                 },
               ]}
               rootColor="lightgrey"
               label={
-                <Text c="white" fw={700} ta="center" size="xl">
+                <Text c="#740BE1" fw={700} ta="center" size="xl">
                   {moduleProgress.totalA} / {moduleProgress.totalQ}
                 </Text>
               }
@@ -90,7 +90,7 @@ const ModuleCard = ({ moduleTitle, submodule }: ModuleCardProps) => {
       <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="h-3/4 rounded-2xl shadow-lg">
         <Card
           h="6.5rem"
-          style={{ backgroundColor: "#a487e6" }}
+          style={{ backgroundColor: "#FFDB5C" }}
           shadow="md"
           padding="lg"
           radius="lg"
@@ -104,17 +104,17 @@ const ModuleCard = ({ moduleTitle, submodule }: ModuleCardProps) => {
               sections={[
                 {
                   value: (moduleProgress.totalA / moduleProgress.totalQ) * 100,
-                  color: "lime",
+                  color: "#740BE1",
                 },
               ]}
               rootColor="lightgrey"
               label={
-                <Text c="white" fw={700} ta="center" size="sm">
+                <Text c="#740BE1" fw={700} ta="center" size="sm">
                   {Math.round(moduleProgress.totalA / moduleProgress.totalQ * 100)}%
                 </Text>
               }
             />
-            <div className="text-left w-2/3  h-full">
+            <div className="text-left w-2/3  h-full text-[#740BE1]">
               <h1 className="text-xl font-bold">{moduleTitle.split(":")[0]}</h1>
               <p className="font-semibold ">{moduleTitle.split(":")[1]}</p>
             </div>

@@ -53,6 +53,7 @@ const UserModal = ({
                 </p>
               </div>
               <Progress
+                aria-label="User progress bar"
                 size="lg"
                 color="#6b30f2"
                 value={userProgress.totalProgress}
@@ -118,7 +119,7 @@ const UserModal = ({
                     {userProgress.totalA} / {userProgress.totalQ}{" "}
                   </p>
                 </div>
-                <Progress color="#6b30f2" value={userProgress.totalProgress} />
+                <Progress aria-label="User progress bar" color="#6b30f2" value={userProgress.totalProgress} />
               </div>
             </div>
             <div className="w-full flex flex-col p-4 ">

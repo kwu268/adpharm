@@ -10,16 +10,16 @@ const UserCarousel = ({ progress }: UserCarouselProps) => {
   return (
     <Carousel
       orientation="vertical"
-      withControls={false}
+      withControls={true}
       height={350}
       slideSize={{ base: "50%", tablet: "33%", md: "33.333333%" }}
       slideGap="md"
+      align={"start"}
       loop
-      align="start"
     >
       {Object.entries(progress).map(([module, submodule]) => {
         return (
-          <Carousel.Slide className=" self-center w-3/4 ">
+          <Carousel.Slide>
             <ModuleCard moduleTitle={module} submodule={submodule} />
           </Carousel.Slide>
         );

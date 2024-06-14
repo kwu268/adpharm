@@ -25,13 +25,14 @@ const SubmoduleCarousel = ({ submodule }: SubmoduleCarouselProps) => {
               h="100%"
               padding="lg"
               radius="lg"
+              className="cursor-pointer"
             >
-              <h3 className="font-bold text-lg border-t-2 pt-4">{submoduleTitle}</h3>
+              <h3 className="font-bold text-md border-t-2 pt-4">{submoduleTitle}</h3>
               <div className="flex flex-col gap-4 mt-4">
                 {Object.entries(submoduleQuestions).map(
                   ([question, answer]) => {
                     return (
-                      <div key={question} className={`px-7 ${!answer && "text-red-800"}`}>
+                      <div key={question} className={`px-4 text-sm  ${!answer && "text-red-800"}`}>
                         <p className="font-bold">{question}</p>
                         <p className="italic">{answer ? answer : "NA"}</p>
                       </div>

@@ -5,6 +5,8 @@ export default {
     screens: {
       'mobileSm': '320px',
 
+      "SE": "375px",
+
       'mobileMd': '474px',
 
       'sm': '640px',

@@ -59,7 +59,11 @@ const UserCard = ({ userInfo }: UserCardProps) => {
   }, [progress]);
 
   return (
-    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="rounded-[2.8rem] shadow-lg">
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="rounded-[2.8rem] shadow-lg cursor-pointer"
+    >
       <UserModal
         opened={opened}
         onClose={close}
@@ -69,7 +73,7 @@ const UserCard = ({ userInfo }: UserCardProps) => {
       />
       <Card
         onClick={open}
-        className="border-2 shadow-xl rounded-3xl"
+        className="border-2 shadow-xl rounded-3xl pointer"
         radius={"xl"}
       >
         <Card.Section>
@@ -95,6 +99,7 @@ const UserCard = ({ userInfo }: UserCardProps) => {
                 </p>
               </div>
               <Progress
+                aria-label="User progress bar"
                 color="#6b30f2"
                 value={calculateProgress().totalProgress}
               />

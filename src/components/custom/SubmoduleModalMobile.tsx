@@ -16,13 +16,7 @@ const SubmoduleModalMobile = ({opened, onClose, submodule, moduleTitle}: Submodu
 
   return (
     <>
-      <Modal radius={'lg'} title={moduleTitle} styles={{
-          title: {
-            fontWeight: 'bold',
-            fontSize: '20px',
-            textAlign: "center"
-          },
-        }} opened={opened} onClose={onClose} centered>
+      <Modal radius={'lg'} withCloseButton={false} opened={opened} onClose={onClose} centered>
         <SubmoduleCarousel submodule={submodule} />
       </Modal>
 
