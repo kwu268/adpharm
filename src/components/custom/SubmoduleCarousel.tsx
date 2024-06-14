@@ -23,13 +23,10 @@ const SubmoduleCarousel = ({ submodule }: SubmoduleCarouselProps) => {
           <Carousel.Slide key={submoduleTitle}>
             <Card
               h="100%"
-              style={{ backgroundColor: "#a487e6" }}
-              shadow="sm"
               padding="lg"
               radius="lg"
-              withBorder
             >
-              <h3 className="font-bold text-lg">{submoduleTitle}</h3>
+              <h3 className="font-bold text-lg border-t-2 pt-4">{submoduleTitle}</h3>
               <div className="flex flex-col gap-4 mt-4">
                 {Object.entries(submoduleQuestions).map(
                   ([question, answer]) => {

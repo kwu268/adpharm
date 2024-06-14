@@ -33,14 +33,12 @@ const SubmoduleModal = ({
       >
         <Card
           h="100%"
-          style={{ backgroundColor: "#a487e6" }}
-          shadow="sm"
-          padding="lg"
+            padding="lg"
           radius="lg"
-          withBorder
+          
         >
-          <h3 className="font-bold text-lg mb-2">{submoduleTitle}</h3>
-          <div className="flex flex-col gap-4 ">
+          <h3 className="font-bold text-lg mb-2 border-b-2 pb-4">{submoduleTitle}</h3>
+          <div className="flex flex-col gap-4 pt-4">
             {Object.entries(submoduleQuestion).map(([question, answer]) => {
               return (
                 <div
