@@ -45,7 +45,7 @@ const ModuleCard = ({ moduleTitle, submodule }: ModuleCardProps) => {
 
   if (isMobileScreen) {
     return (
-      <motion.div whileHover={{ scale: 1.01 }} className="h-full shadow-lg rounded-2xl">
+      <motion.div whileHover={{ scale: 1.02 }} className="h-full shadow-lg rounded-2xl">
         <SubmoduleModalMobile
           opened={opened}
           onClose={close}

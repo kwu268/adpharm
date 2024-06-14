@@ -34,7 +34,7 @@ const SubmoduleCarousel = ({ submodule }: SubmoduleCarouselProps) => {
                 {Object.entries(submoduleQuestions).map(
                   ([question, answer]) => {
                     return (
-                      <div key={question} className={`px-5 ${!answer && "text-red-800"}`}>
+                      <div key={question} className={`px-7 ${!answer && "text-red-800"}`}>
                         <p className="font-bold">{question}</p>
                         <p className="italic">{answer ? answer : "NA"}</p>
                       </div>

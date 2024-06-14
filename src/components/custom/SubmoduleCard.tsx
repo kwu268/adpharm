@@ -61,7 +61,7 @@ const SubmoduleCard = ({
         <h3 className="font-semibold text-md text-center">
           {submoduleTitle.split(":")[0]}
         </h3>
-        <h3 className=" text-md text-center">{submoduleTitle.split(":")[1]}</h3>
+        <h3 className="text-md text-center">{submoduleTitle.split(":")[1]}</h3>
         <div className="flex flex-col px-4 pt-2">
           <p className="text-sm text-end">
             {moduleProgress.totalA} / {moduleProgress.totalQ}

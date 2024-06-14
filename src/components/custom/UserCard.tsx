@@ -59,7 +59,7 @@ const UserCard = ({ userInfo }: UserCardProps) => {
   }, [progress]);
 
   return (
-    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className=" rounded-[2.8rem] shadow-lg">
+    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="rounded-[2.8rem] shadow-lg">
       <UserModal
         opened={opened}
         onClose={close}
@@ -88,7 +88,7 @@ const UserCard = ({ userInfo }: UserCardProps) => {
               <h2 className="text-center">{user_id}</h2>
             </div>
             <div className="grid grid-rows-2 pt-4">
-              <div className=" text-sm flex pb-2">
+              <div className="text-sm flex pb-2">
                 <p className="w-3/4 font-semibold">{course}</p>
                 <p className="w-1/4 text-right">
                   {Math.round(calculateProgress().totalProgress)}%
