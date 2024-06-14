@@ -115,7 +115,7 @@ const ModuleCard = ({ moduleTitle, submodule }: ModuleCardProps) => {
               }
             />
             <div className="text-left w-2/3  h-full">
-              <h1 className="text-2xl font-bold">{moduleTitle.split(":")[0]}</h1>
+              <h1 className="text-xl font-bold">{moduleTitle.split(":")[0]}</h1>
               <p className="font-semibold ">{moduleTitle.split(":")[1]}</p>
             </div>
           </div>
