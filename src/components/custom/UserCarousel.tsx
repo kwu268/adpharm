@@ -9,7 +9,7 @@ type UserCarouselProps = {
 const UserCarousel = ({ progress }: UserCarouselProps) => {
   return (
     <Carousel
-      orientation="vertical"
+      orientation="horizontal"
       withControls={false}
       withIndicators
       height={350}

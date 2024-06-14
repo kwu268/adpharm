@@ -43,7 +43,7 @@ const SubmoduleCard = ({
     getModuleProgress();
   }, []);
   return (
-    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="shadow-lg rounded-3xl">
       <SubmoduleModal
         opened={opened}
         onClose={close}

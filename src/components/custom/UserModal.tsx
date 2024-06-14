@@ -30,7 +30,7 @@ const UserModal = ({
   return (
     <Modal fullScreen={true} opened={opened} onClose={onClose}>
       {isMobileScreen ? (
-        <div className="flex flex-col border-4">
+        <div className="flex flex-col border rounded-xl pb-3">
           <div className=" flex flex-col items-center gap-2">
             <Avatar
               className=" shadow-xl"

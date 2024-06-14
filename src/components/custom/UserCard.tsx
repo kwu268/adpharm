@@ -59,7 +59,7 @@ const UserCard = ({ userInfo }: UserCardProps) => {
   }, [progress]);
 
   return (
-    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className=" rounded-[2.8rem] shadow-lg">
       <UserModal
         opened={opened}
         onClose={close}
